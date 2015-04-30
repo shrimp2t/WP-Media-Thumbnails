@@ -1,0 +1,254 @@
+
+/*-----------------------------------------------------------------------------------*/
+/*	Responsive Grid (foundation)
+/*-----------------------------------------------------------------------------------*/
+.*{
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.g-row .g-col, .g-row .g-cols{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.container{ margin: 0px auto; padding: 0px 5px; max-width: 1008px; }
+
+.g-row { width: 1038px; max-width: 100%;  margin: 0px -3px; }
+.g-row .g-row { width: auto; max-width: none; min-width: 0; margin: 0 -3px; }
+.g-row:after { clear: both; content: ""; display: block; }
+
+.g-col, .g-cols { float: left; min-height: 1px; padding: 0 3px; position: relative; margin-bottom: 6px; }
+.g-col.wrapper, .g-cols.wrapper{ padding: 0px; }
+
+.g-row .col-1 		{ width: 8.333%;}
+.g-row .col-2 		{ width: 16.667%;}
+.g-row .col-3 	    { width: 25%;}
+.g-row .col-4 		{ width: 33.333%;}
+.g-row .col-5 		{ width: 41.667%;}
+.g-row .col-6 		{ width: 50%;}
+.g-row .col-7 	    { width: 58.333%;}
+.g-row .col-8 	    { width: 66.667%;}
+.g-row .col-9 		{ width: 75%;}
+.g-row .col-10 		{ width: 83.333%;}
+.g-row .col-11	    { width: 91.667%;}
+.g-row .col-12 , .col-12 	    { width: 100%; }
+
+.wpmt-thumbnail img{ max-width: 100%; height: auto; width: 100%; }
+.wpmt-thumbnail img { -ms-interpolation-mode: bicubic; }
+ object,  embed { max-width: 100%; }
+
+.wpmt-thumbnail {
+    margin-bottom: 0px;
+}
+.fluid-width-video-wrapper .me-plugin {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.g-col.first {
+    clear: left;
+}
+.wpmt-thumbnail .item-caption-wrap {
+    background: #CCCCCC;
+    padding: 10px;
+}
+.wpmt-thumbnail .item-title {
+    font-size: 14px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+.wpmt-thumbnail .item-caption {
+    margin-top: 5px;
+}
+.wpmt-thumbnail img{
+    line-height: 0px;
+}
+.wpmt-thumbnail a{ display: block; }
+.wpmt-thumbnail a , .g-item {
+    color: #666666;
+    text-decoration: none;
+}
+.wpmt-thumbnail *{
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.wpmt-thumbnail.wptm-gallery {
+    margin: 0 auto;
+    padding: 0 0 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.wpmt-thumbnail figure {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* Common style */
+.wpmt-thumbnail figure {
+    position: relative;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    /* height: 400px; */
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0px;
+}
+
+.wpmt-thumbnail figure img, .wpmt-thumbnail figure .img {
+    position: relative;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+.wpmt-thumbnail figure .img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+    background-size: cover;
+}
+
+.wpmt-thumbnail figure figcaption {
+    padding: 20px;
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /*
+    background: linear-gradient(transparent, #000000) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    */
+    background:  rgba(0, 0, 0, .3);
+}
+
+
+.wpmt-thumbnail figure:hover figcaption {
+    background:  rgba(0, 0, 0, 0.6);
+}
+
+
+.wpmt-thumbnail figure figcaption::before,
+.wpmt-thumbnail figure figcaption::after {
+    pointer-events: none;
+}
+
+.wpmt-thumbnail figure figcaption,
+.wpmt-thumbnail figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.wpmt-thumbnail figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.wpmt-thumbnail figure h2 {
+    font-size: 22px;
+}
+
+.wpmt-thumbnail .lg-box figure h2 {
+    font-size: 30px;
+}
+
+.wpmt-thumbnail figure h2 span {
+    font-weight: bold;
+}
+
+.wpmt-thumbnail figure h2,
+.wpmt-thumbnail figure p {
+    margin: 0;
+}
+
+.wpmt-thumbnail figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Responsive Grid For Mobile
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none;
+        width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+
+    .container{ margin: 0px auto; max-width: 420px; }
+
+    .g-row { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
+
+    .g-row .g-col, .g-row .columns { width: 100%; float: none; }
+
+    .g-col:last-child, .g-cols:last-child { float: none; }
+    [class*="column"] + [class*="column"]:last-child { float: none; }
+
+    .g-col:before, .g-cols:before, .g-col:after, .g-cols:after { content: ""; display: table; }
+    .g-col:after, .g-cols:after { clear: both; }
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+
+/* Smaller than standard 960 (devices and browsers) (ALL) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) (4)*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser)(1,2,3) */
+@media only screen and (max-width: 767px){
+    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none;
+        width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+    .container{ margin: 0px auto; }
+    .g-row { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
+    .g-row .g-col, .row .g-cols { width: 100%; float: none; }
+    .g-col:last-child, .g-cols:last-child { float: none; }
+    [class*="column"] + [class*="column"]:last-child { float: none; }
+    .g-col:before, .g-cols:before, .g-col:after, .g-cols:after { content: ""; display: table; }
+    .g-col:after, .g-cols:after { clear: both; }
+
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) (3) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) (1, 2) */
+@media only screen and (max-width: 479px) {
+    .container { padding-left: 0px; padding-right: 0px; }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size SMALL phone (devices and browsers) (1) */
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+
+
+}
+

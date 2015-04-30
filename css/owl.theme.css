@@ -1,0 +1,189 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
+*/
+
+.wpmt-thumbnail .owl-theme .owl-controls{
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.wpmt-thumbnail .owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	padding: 0px;
+    line-height: 0px;
+	font-size: 40px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+	filter: Alpha(Opacity=80);/*IE7 fix*/
+	opacity: 0.8;
+    color: #f2f3f4;
+    z-index: 26;
+    font-style: normal;
+    background: rgba(0,0,0, .6);
+}
+.wpmt-thumbnail .owl-theme .owl-controls .owl-buttons div  i{
+    margin-left: 0px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.wpmt-thumbnail .owl-theme .owl-controls .owl-buttons div.owl-prev  i {
+    margin-left: 0px;
+}
+.wpmt-thumbnail .owl-theme .owl-controls .owl-buttons div.owl-next  i {
+    margin-left: 3px;
+}
+
+.wpmt-thumbnail .owl-theme .owl-controls .owl-buttons{
+    display: block;
+}
+.wpmt-thumbnail .carousel:hover  .owl-controls .owl-buttons{
+     display: block;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.wpmt-thumbnail .owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+.wpmt-thumbnail .owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.wpmt-thumbnail .owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 10px;
+	margin: 5px 3px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	background: #000;
+}
+.wpmt-thumbnail .owl-theme .owl-controls .owl-page.active span,
+.wpmt-thumbnail .owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+/* If PaginationNumbers is true */
+.wpmt-thumbnail .owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 7px;
+	font-size: 10px;
+}
+/* preloading images */
+.wpmt-thumbnail .owl-item.loading{
+	min-height: 150px;
+}
+
+.wpmt-thumbnail .carousel {
+    position: relative;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.wpmt-thumbnail .border-box .carousel{ padding: 15px 0px 15px; }
+.wpmt-thumbnail .owl-item .item{    position: relative; text-align: center; }
+
+.wpmt-thumbnail .type-carousel .owl-item {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.wpmt-thumbnail .carousel .item {
+    padding: 0px 15px;
+    background: #ffffff;
+    width: 100%;
+}
+.wpmt-thumbnail .carousel .owl-item:first-child .item {
+
+}
+.wpmt-thumbnail .carousel .owl-item:last-child .item  {
+
+}
+.wpmt-thumbnail .slider-item .type-carousel .owl-item .item {
+    background: #F8F8F8;
+    border: 1px solid #eaeaea;
+}
+.wpmt-thumbnail .type-slider .owl-item .item {
+    margin: 0px 0px;
+}
+.wpmt-thumbnail .type-slider .owl-item .item img{  width: 100%; }
+.wpmt-thumbnail .owl-item .item .label { text-align: center; margin-top: 10px; }
+.wpmt-thumbnail .type-carousel .owl-item .item .label  { height: 55px;  display: table; vertical-align: middle; text-align: center; width: 100%; }
+.wpmt-thumbnail .type-carousel .owl-item .item .label a{ display: table-cell; width: 100%; height: 100%; vertical-align: middle; padding: 0px 5px; }
+
+.wpmt-thumbnail .carousel .owl-prev ,
+.wpmt-thumbnail .carousel .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+.wpmt-thumbnail .carousel .owl-prev { left: 20px;  }
+.wpmt-thumbnail .carousel .owl-next { right: 20px;  }
+
+.wpmt-thumbnail .carousel.type-slider .owl-controls {
+
+}
+.wpmt-thumbnail .owl-item .item .meta h3 {
+    font-size: 16px;
+}
+
+/* Type slide */
+.wpmt-thumbnail .carousel.type-slider .item-inner {
+    position: relative;
+}
+.wpmt-thumbnail .carousel.type-slider {
+
+}
+.wpmt-thumbnail .carousel.type-slider .item {
+    padding: 0 0px 0px 0px;
+}
+.wpmt-thumbnail .carousel.type-slider .owl-controls {
+    margin-top: 10px;
+}
+
+.wpmt-thumbnail .carousel.type-slider .owl-pagination {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+}
+.wpmt-thumbnail .carousel.type-slider .owl-controls .owl-buttons div {
+
+}
+.wpmt-thumbnail .carousel.type-slider .meta  {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: block;
+}
+.wpmt-thumbnail .carousel.type-slider .meta-inner {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    margin: 0px 30px;
+    padding: 20px;
+}
+
+.wpmt-thumbnail .carousel.type-slider .meta-inner  {
+    color: #FFFFFF;
+}
+.wpmt-thumbnail .carousel.type-slider .meta-inner a {
+    color: #FFFFFF;
+}
+.wpmt-thumbnail .carousel.type-slider .meta-inner a:hover {
+    color: #DB3F11;
+}
+.wpmt-thumbnail .carousel.type-slider .meta-inner  h2{
+    margin-top: 0px;
+}
+.wpmt-thumbnail .carousel.type-slider .item:hover img {
+    opacity: 1;
+}
